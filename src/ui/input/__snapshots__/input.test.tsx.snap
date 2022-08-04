@@ -1,0 +1,20 @@
+// Vitest Snapshot v1
+
+exports[`Input > should generate Input component snapshot 1`] = `
+<div>
+  <div>
+    <label
+      for="static-id-0"
+      id="static-id-0"
+    >
+      Test Label
+    </label>
+    <input
+      aria-labelledby="static-id-0"
+      defaultvalue=""
+      id="static-id-0"
+      type="text"
+    />
+  </div>
+</div>
+`;

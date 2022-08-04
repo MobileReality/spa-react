@@ -1,0 +1,17 @@
+schema: "./schema.graphql"
+documents:
+  - "./src/api/graphql/queries/**/*.graphql"
+generates:
+  ./src/api/graphql/api.ts:
+    plugins:
+      - "typescript"
+      - "typescript-urql"
+      - "typescript-operations"
+    config:
+      withHooks: true
+      namingConvention:
+        enumValues: "change-case-all#upperCase"
+
+hooks:
+  afterAllFileWrite:
+    - prettier --write
