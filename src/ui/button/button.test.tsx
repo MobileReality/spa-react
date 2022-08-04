@@ -5,7 +5,7 @@ import { Button } from './button';
 
 describe('Button', () => {
     it('should generate Button component snapshot', () => {
-        const tree = render(<Button>1</Button>);
+        const tree = render(<Button>Hello</Button>);
         expect(tree).toMatchSnapshot();
     });
 });
