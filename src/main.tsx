@@ -9,7 +9,7 @@ import { Provider } from 'urql';
 import { initAxe } from 'libs/axe/config';
 import { client } from 'libs/urql/config';
 
-import App from './App';
+import App from './app';
 
 // unsupported top level await
 // eslint-disable-next-line @typescript-eslint/no-floating-promises

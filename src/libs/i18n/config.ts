@@ -11,6 +11,7 @@ export default i18n
         fallbackLng: 'en',
         debug: true,
         interpolation: {
-            escapeValue: false, // not needed for react as it escapes by default
+            // not needed for react as it escapes by default
+            escapeValue: false,
         },
     });
