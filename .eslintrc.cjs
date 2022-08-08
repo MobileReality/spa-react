@@ -17,12 +17,9 @@ module.exports = {
         ecmaVersion: 'latest',
         sourceType: 'module',
     },
-    rules: {
-        // temporary offs
-        'line-comment-position': 'off',
-        'no-inline-comments': 'off',
-        'unicorn/no-empty-file': 'off',
-        '@typescript-eslint/ban-ts-comment': 'off',
-        '@typescript-eslint/prefer-ts-expect-error': 'off',
+    settings: {
+        react: {
+            version: 'detect',
+        },
     },
 };
