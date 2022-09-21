@@ -1,15 +1,14 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import type { FormValues } from 'views/about/schema';
+import { FORM_FIELDS, formSchema } from 'views/about/schema';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { TextInput } from 'components/text-input';
-import { showSuccess } from 'utils/toast';
-
-import type { FormSchema } from './helpers/schema';
-import { schema } from './helpers/schema';
+import { showSuccess } from 'lib/toast';
 
 export const AboutView = () => {
-    const { control, handleSubmit } = useForm<FormSchema>({
-        resolver: zodResolver(schema),
+    const { control, handleSubmit } = useForm<FormValues>({
+        resolver: zodResolver(formSchema),
     });
 
     const onSubmit = handleSubmit(({ firstName }) => {
@@ -20,7 +19,7 @@ export const AboutView = () => {
         <section>
             <h1>About View</h1>
             <form onSubmit={onSubmit}>
-                <TextInput name="firstName" control={control} />
+                <TextInput name={FORM_FIELDS.FIRST_NAME} control={control} />
             </form>
         </section>
     );

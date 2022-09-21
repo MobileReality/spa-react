@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import { replaceReactAriaIds } from 'helpers/replace-aria-react-ids';
+import { replaceReactAriaIds } from 'lib/helpers';
 
 import { Input } from './';
 

@@ -1,8 +1,8 @@
-schema: "./schema.graphql"
+schema: "./src/api/graphql/schema.gql"
 documents:
-  - "./src/api/graphql/queries/**/*.graphql"
+  - "./src/api/graphql/**/*.gql"
 generates:
-  ./src/api/graphql/api.ts:
+  src/api/graphql/generated.ts:
     plugins:
       - "typescript"
       - "typescript-urql"
@@ -14,4 +14,4 @@ generates:
 
 hooks:
   afterAllFileWrite:
-    - prettier --write
+    - prettier --write ./src/api/graphql/generated.ts

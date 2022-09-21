@@ -1,5 +1,5 @@
 import { useRoutes } from 'react-router-dom';
-import { routes } from 'navigation/routes';
+import { routes } from 'lib/navigation';
 
 const App = () => {
     const element = useRoutes(routes);
