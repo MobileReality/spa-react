@@ -8,9 +8,9 @@
         "build": "vite build",
         "preview": "vite preview",
         "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
-        "test": "vitest --run",
+        "test": "TZ=UTC vitest --run",
         "tsc": "tsc",
-        "generate-graphql": "graphql-codegen --config ./codegen.yml",
+        "codegen": "graphql-codegen --config ./src/api/graphql/codegen.yml",
         "ladle": "ladle serve",
         "prepare": "husky install"
     },

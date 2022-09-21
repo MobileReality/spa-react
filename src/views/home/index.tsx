@@ -1,18 +1,13 @@
 import React from 'react';
-import { useGetCountriesQuery } from 'api/graphql/api';
+import type { GetCountriesQuery } from 'api/graphql/generated';
+import type { Refetch } from 'lib/types';
 import { Button } from 'ui/button';
 
-export const HomeView = () => {
-    const [{ data, error, fetching }, refetch] = useGetCountriesQuery();
+type Props = {
+    data: GetCountriesQuery;
+} & Refetch;
 
-    if (error) {
-        return <div>Error!</div>;
-    }
-
-    if (fetching) {
-        return <div>Loading...</div>;
-    }
-
+export const HomeView = ({ data, refetch }: Props) => {
     return (
         <div>
             <Button
@@ -25,8 +20,8 @@ export const HomeView = () => {
                 Refetch
             </Button>
             <ul>
-                {data?.countries?.map((item, index) => (
-                    <li key={index}>{item.name}</li>
+                {data?.countries?.map(({ name }, index) => (
+                    <li key={index}>{name}</li>
                 ))}
             </ul>
         </div>

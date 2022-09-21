@@ -1,19 +1,17 @@
 import 'ui/theme.scss';
-import 'libs/i18n/config';
+import 'lib/i18n';
 
 import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { Toaster } from 'react-hot-toast';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'urql';
-import { initAxe } from 'libs/axe/config';
-import { client } from 'libs/urql/config';
+import { client } from 'api/graphql/urql';
+import { initAxe } from 'lib/axe';
 
 import App from './app';
 
-// unsupported top level await
-// eslint-disable-next-line @typescript-eslint/no-floating-promises
-initAxe();
+void initAxe();
 
 const container = document.querySelector('#root');
 const root = createRoot(container!);
