@@ -11,6 +11,7 @@ export default defineConfig({
             components: path.resolve(__dirname, './src/components'),
             lib: path.resolve(__dirname, './src/lib'),
             pages: path.resolve(__dirname, './src/pages'),
+            providers: path.resolve(__dirname, './src/providers'),
             ui: path.resolve(__dirname, './src/ui'),
             views: path.resolve(__dirname, './src/views'),
         },
