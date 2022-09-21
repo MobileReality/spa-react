@@ -6,7 +6,7 @@ exports[`Button > should generate Button component snapshot 1`] = `
   "baseElement": <body>
     <div>
       <button
-        class="_button_1mj7v_1"
+        class="_button_116f97"
         type="button"
       >
         Hello
@@ -15,7 +15,7 @@ exports[`Button > should generate Button component snapshot 1`] = `
   </body>,
   "container": <div>
     <button
-      class="_button_1mj7v_1"
+      class="_button_116f97"
       type="button"
     >
       Hello
