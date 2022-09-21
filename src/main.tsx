@@ -5,9 +5,8 @@ import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { Toaster } from 'react-hot-toast';
 import { BrowserRouter } from 'react-router-dom';
-import { Provider } from 'urql';
-import { client } from 'api/graphql/urql';
 import { initAxe } from 'lib/axe';
+import { UrqlProvider } from 'providers/urql';
 
 import App from './app';
 
@@ -19,9 +18,9 @@ const root = createRoot(container!);
 root.render(
     <StrictMode>
         <BrowserRouter>
-            <Provider value={client}>
+            <UrqlProvider>
                 <App />
-            </Provider>
+            </UrqlProvider>
         </BrowserRouter>
         <Toaster />
     </StrictMode>,
