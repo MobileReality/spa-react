@@ -2,14 +2,14 @@
     display: flex;
     max-width: 500px;
     flex-direction: column;
+}
 
-    .image {
-        width: 100%;
-        height: auto;
-    }
+.image {
+    width: 100%;
+    height: auto;
+}
 
-    .hello {
-        color: var(--tertiary);
-        font-size: var(--main-title);
-    }
+.hello {
+    color: var(--tertiary);
+    font-size: var(--main-title);
 }

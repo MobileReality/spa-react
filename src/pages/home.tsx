@@ -1,6 +1,6 @@
 import React from 'react';
-import { HomeView } from 'views/home';
-import { useGetCountriesQuery } from 'api/graphql/generated';
+import { useGetCountriesQuery } from '@api/graphql/generated';
+import { HomeView } from '@views/home';
 
 export const Home = () => {
     const [{ data, fetching, error }, refetch] = useGetCountriesQuery();

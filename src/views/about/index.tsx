@@ -1,14 +1,12 @@
 import React from 'react';
-import { useForm } from 'react-hook-form';
-import type { FormValues } from 'views/about/schema';
-import { FORM_FIELDS, formSchema } from 'views/about/schema';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { TextInput } from 'components/text-input';
-import { showSuccess } from 'lib/toast';
+import { TextInput } from '@components';
+import { useBaseForm } from '@hooks';
+import { showSuccess } from '@lib/toast';
+import { FORM_FIELDS, formSchema } from '@views/about/schema';
 
 export const AboutView = () => {
-    const { control, handleSubmit } = useForm<FormValues>({
-        resolver: zodResolver(formSchema),
+    const { control, handleSubmit } = useBaseForm({
+        schema: formSchema,
     });
 
     const onSubmit = handleSubmit(({ firstName }) => {

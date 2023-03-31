@@ -1,7 +1,7 @@
 import React from 'react';
-import type { GetCountriesQuery } from 'api/graphql/generated';
-import type { Refetch } from 'lib/types';
-import { Button } from 'ui/button';
+import type { GetCountriesQuery } from '@api/graphql/generated';
+import type { Refetch } from '@lib/types';
+import { Button } from '@ui';
 
 type Props = {
     data: GetCountriesQuery;

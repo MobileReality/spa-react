@@ -1,11 +1,11 @@
 import React from 'react';
-import { useForm } from 'react-hook-form';
-import { Navbar } from 'components/navbar';
-import { NavbarOutlet } from 'components/navbar-outlet';
-import { TextInput } from 'components/text-input';
+import { Navbar, NavbarOutlet, TextInput } from '@components';
+import { useBaseForm } from '@hooks';
+import { layoutNavbarFormSchema } from '@views/layout-navbar/schema';
 
 export const LayoutNavbar = () => {
-    const { control } = useForm({
+    const { control } = useBaseForm({
+        schema: layoutNavbarFormSchema,
         defaultValues: {
             test: 'test default value',
         },

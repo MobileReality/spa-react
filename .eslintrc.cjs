@@ -23,6 +23,9 @@ module.exports = {
         },
     },
     rules: {
-        'no-void': 'off'
+        'no-void': 'off',
+        '@typescript-eslint/no-explicit-any': 'error',
+        '@typescript-eslint/no-duplicate-imports': 'error',
+        'react-hooks/exhaustive-deps': 'error',
     }
 };

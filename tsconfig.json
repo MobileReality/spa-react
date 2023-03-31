@@ -17,17 +17,20 @@
         "jsx": "react-jsx",
         "plugins": [{ "name": "typescript-plugin-css-modules" }],
         "types": ["node"],
+        "baseUrl": ".",
+
 
         "paths": {
-            "api/*": ["./src/api/*"],
+            "@api/*": ["./src/api/*"],
             "assets/*": ["./src/assets/*"],
-            "components/*": ["./src/components/*"],
-            "lib/*": ["./src/lib/*"],
-            "pages/*": ["./src/pages/*"],
-            "providers/*": ["./src/providers/*"],
-            "ui/*": ["./src/ui/*"],
-            "utils/*": ["./src/utils/*"],
-            "views/*": ["./src/views/*"]
+            "@components": ["src/components/index.ts"],
+            "@hooks": ["src/hooks/index.ts"],
+            "@lib/*": ["src/lib/*"],
+            "@pages/*": ["src/pages/*"],
+            "@providers/*": ["./src/providers/*"],
+            "@ui": ["./src/ui/index.ts"],
+            "@utils": ["src/utils/index.ts"],
+            "@views/*": ["src/views/*"]
         }
     },
     "include": ["src", "vite.config.ts", "node_modules/vitest/globals.d.ts", ".ladle"],
