@@ -28,7 +28,6 @@
             "@lib/*": ["src/lib/*"],
             "@pages/*": ["src/pages/*"],
             "@providers/*": ["./src/providers/*"],
-            "@ui": ["./src/ui/index.ts"],
             "@utils": ["src/utils/index.ts"],
             "@views/*": ["src/views/*"]
         }

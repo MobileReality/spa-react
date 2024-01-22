@@ -1,5 +1,4 @@
 import type { ReactNode } from 'react';
-import React from 'react';
 import { Outlet } from 'react-router-dom';
 
 type Props = {

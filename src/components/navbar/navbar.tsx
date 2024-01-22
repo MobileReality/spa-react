@@ -1,9 +1,6 @@
-import * as React from 'react';
 import { useTranslation } from 'react-i18next';
 import type { To } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-
-import styles from './navbar.module.scss';
 
 type NavLink = {
     to: To;
@@ -18,7 +15,7 @@ export const Navbar = ({ navLinks }: Props) => {
     const { t } = useTranslation();
 
     return (
-        <nav className={styles.navbar}>
+        <nav>
             <h1>{t('title')}</h1>
             <ul>
                 {navLinks.map(({ to, name }) => (
