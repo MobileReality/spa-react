@@ -1,9 +1,5 @@
-import { useRoutes } from 'react-router-dom';
-import { routes } from '@lib/navigation';
-
 const App = () => {
-    const element = useRoutes(routes);
-    return element;
+    return <div>Hello World!</div>
 };
 
 export default App;

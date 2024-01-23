@@ -18,8 +18,6 @@
         "plugins": [{ "name": "typescript-plugin-css-modules" }],
         "types": ["node"],
         "baseUrl": ".",
-
-
         "paths": {
             "@api/*": ["./src/api/*"],
             "assets/*": ["./src/assets/*"],

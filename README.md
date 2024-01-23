@@ -6,6 +6,9 @@
 
 `npm run dev` - runs the development server
 
+### Requirements
+Node >= 18
+
 ### Used technologies / tools:
 
 -   ✅ [React](https://reactjs.org/)
