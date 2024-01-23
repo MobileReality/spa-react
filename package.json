@@ -4,7 +4,7 @@
     "version": "0.0.0",
     "type": "module",
     "scripts": {
-        "denpv": "vite --open",
+        "dev": "vite --open",
         "build": "vite build",
         "preview": "vite preview",
         "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
@@ -16,9 +16,13 @@
     },
     "dependencies": {
         "@hookform/resolvers": "^3.0.0",
+        "@tanstack/react-query": "^5.17.19",
+        "axios": "^1.6.5",
+        "dayjs": "^1.11.10",
         "i18next": "^23.7.18",
         "i18next-browser-languagedetector": "^7.2.0",
         "i18next-http-backend": "^2.4.2",
+        "jwt-decode": "^4.0.0",
         "modern-normalize": "^2.0.0",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
@@ -26,8 +30,11 @@
         "react-hot-toast": "^2.4.0",
         "react-i18next": "^14.0.1",
         "react-router-dom": "^6.10.0",
+        "react-scroll": "^1.9.0",
+        "styled-components": "^6.1.8",
         "vite-plugin-svgr": "^4.2.0",
-        "zod": "^3.21.4"
+        "zod": "^3.21.4",
+        "zustand": "^4.5.0"
     },
     "devDependencies": {
         "@commitlint/cli": "^18.5.0",

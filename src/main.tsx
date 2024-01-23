@@ -13,7 +13,7 @@ const root = createRoot(container!);
 root.render(
     <StrictMode>
         <BrowserRouter>
-                <App />
+            <App />
         </BrowserRouter>
         <Toaster />
     </StrictMode>,
