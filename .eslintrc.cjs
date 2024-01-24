@@ -24,8 +24,12 @@ module.exports = {
     },
     rules: {
         'no-void': 'off',
+        'no-duplicate-imports': 'off',
         '@typescript-eslint/no-explicit-any': 'error',
-        '@typescript-eslint/no-duplicate-imports': 'error',
         'react-hooks/exhaustive-deps': 'error',
-    }
+        'react/jsx-uses-react': 'error',   
+        'react/jsx-uses-vars': 'error',
+        'react/react-in-jsx-scope': 'off'
+    },
+    ignorePatterns: ['.eslintrc.cjs', 'vite.config.ts', 'commitlint.config.cjs'],
 };
