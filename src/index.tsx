@@ -1,8 +1,8 @@
-import { createRoot } from 'react-dom/client';
+import { createRoot } from 'react-dom/client'
 
-import { App } from '#app/index';
+import { App } from '#app/index'
 
-const container = document.querySelector('#root');
-const root = createRoot(container!);
+const container = document.querySelector('#root')
+const root = createRoot(container!)
 
-root.render(<App />);
+root.render(<App />)

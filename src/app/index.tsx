@@ -1,16 +1,20 @@
-import '#locales/i18n';
-import './App.css';
+import './App.css'
+import '#locales/i18n'
 
-import { Toaster } from 'react-hot-toast';
-import { BrowserRouter } from 'react-router-dom';
+import { Toaster } from 'react-hot-toast'
+import { useTranslation } from 'react-i18next'
+import { BrowserRouter } from 'react-router-dom'
 
+// import.meta.env
 export const App = () => {
-    return (
-        <>
-            <BrowserRouter>
-                <div>test</div>
-            </BrowserRouter>
-            <Toaster />
-        </>
-    );
-};
+  const { t } = useTranslation('common')
+
+  return (
+    <>
+      <BrowserRouter>
+        <div>{t('test')}</div>
+      </BrowserRouter>
+      <Toaster />
+    </>
+  )
+}
