@@ -20,6 +20,38 @@
         "tsc": "tsc",
         "prepare": "husky install"
     },
+    "browserslist": {
+        "production": [
+          ">0.2%",
+          "not dead",
+          "not op_mini all"
+        ],
+        "development": [
+          ">0.2%",
+          "not dead",
+          "not op_mini all"
+        ]
+    },
+    "prettier": {
+        "arrowParens": "avoid",
+        "trailingComma": "es5",
+        "tabWidth": 2,
+        "semi": false,
+        "singleQuote": true
+    },
+    "lint-staged": {
+        "src/**/*.{js,jsx}": [
+            "eslint --fix ./src --ext .js,.jsx,.ts,.tsx",
+            "prettier --write"
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged",
+            "pre-push": "yarn test",
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
     "dependencies": {
         "@hookform/resolvers": "^3.0.0",
         "@tanstack/react-query": "^5.17.19",
