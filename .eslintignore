@@ -3,3 +3,5 @@ public
 node_modules
 scripts
 config
+src/@types/extensions.d.ts
+src/vite-env.d.ts
