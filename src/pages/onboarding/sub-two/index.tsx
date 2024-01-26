@@ -1,11 +1,14 @@
+import { useTranslation } from 'react-i18next'
+
+import { Label } from '#components/label'
+
 export const SubTwo = () => {
+  const { t } = useTranslation('common')
+
   return (
     <div>
       <h1>Onboarding-SubTwo Screen</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vero
-        laudantium repella
-      </p>
+      <Label>{t('lorem')}</Label>
     </div>
   )
 }

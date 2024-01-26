@@ -31,7 +31,7 @@
             "#modules/*": ["./src/modules/*"],
             "#utils/*": ["src/utils/*"],
             "#views/*": ["src/views/*"],
-            "#theme/*": ["src/theme/*"],
+            "#theme": ["src/theme/index.ts"],
         }
     },
     "include": ["src", "vite.config.ts", "node_modules/vitest/globals.d.ts", ".ladle"],

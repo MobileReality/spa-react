@@ -10,10 +10,13 @@ export const Onboarding = () => {
       </p>
       <ul>
         <li>
-          <Link to="sub-one">SubOne</Link>
+          <Link to="sub-one">Sub One</Link>
         </li>
         <li>
-          <Link to="sub-two">SubTwo</Link>
+          <Link to="sub-two">Sub Two</Link>
+        </li>
+        <li>
+          <Link to="12345">Sub Dynamic</Link>
         </li>
       </ul>
       {/* nested route placement */}
